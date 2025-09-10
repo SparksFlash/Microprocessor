@@ -156,8 +156,11 @@
 * Access extended memory > 1MB
 * Address = **Selector (segment register) + Offset**
 * Selector → Descriptor → {Base, Limit, Access Rights}
+![The contents of a segment register during protected mode operation of the
+80286 through Core2 microprocessors](Selector.png)
 
 ### Descriptor Tables
+![The 80286 through Core2 64-bit descriptors.](Descriptors.png)
 
 * **GDT** (Global) → system segments
 * **LDT** (Local) → application segments
@@ -170,6 +173,7 @@
 * 32-bit (80386+) → 4GB
 
 ### Access Rights
+![The access rights byte for the 80286 through Core2 descriptor.](Access-Right-byte.png)
 
 * Data/code type
 * Growth direction
