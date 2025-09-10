@@ -204,12 +204,15 @@
 * **CR4** → Large page size (2MB/4MB)
 
 ### Linear Address Breakdown (32-bit)
+![The format for the linear address (a) and a page directory or page table entry (b).](Linear-address.png)
 
 * Directory (10 bits) → Page Directory Entry
 * Table (10 bits) → Page Table Entry
 * Offset (12 bits) → Inside page
 
 ### Page Structures
+![The paging mechanism in the 80386 through Core2 microprocessors.](Paging-Mechanism.png)
+
 
 * Page Directory = 1024 entries (4KB)
 * Page Table = 1024 entries (4KB)
@@ -231,6 +234,8 @@
 ---
 
 ## 🔹 Flat Mode Memory (64-bit)
+
+![64-bit flat mode memory model.](Flat-Memory.png)
 
 * Found in Pentium 4, Core2 (64-bit extensions)
 * **Segmentation disabled**
